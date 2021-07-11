@@ -1,11 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit'
 
-import generationReducer from './generation';
+import generationReducer from './generation'
 
 export const store = configureStore({
     reducer: {
         generationReducer: generationReducer,
     },
-});
+})
 
-export type RootState = ReturnType<typeof store.getState>;
+export type RootState = ReturnType<typeof store.getState>
